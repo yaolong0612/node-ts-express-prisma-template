@@ -1,8 +1,13 @@
 {
-  "name": "ts-express-prisma-template",
+  "name": "node-ts-express-prisma-template",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "npm@10.x",
   "scripts": {
     "lint": "eslint",
     "lint:fix": "eslint --fix",
