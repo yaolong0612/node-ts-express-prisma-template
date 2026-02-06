@@ -6,7 +6,13 @@
   "scripts": {
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "prisma:generate": "prisma generate",
+    "migration:create": "prisma migrate dev --create-only",
+    "migrate": "prisma migrate deploy",
+    "db:seed": "prisma db seed"
   },
   "keywords": [],
   "author": "",
@@ -35,6 +41,9 @@
     "typescript-eslint": "^8.54.0"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "@prisma/client": "^7.3.0",
+    "express": "^5.2.1",
+    "joi": "^18.0.2",
+    "winston": "^3.19.0"
   }
 }
