@@ -14,6 +14,7 @@ This repository is a template for quickly bootstrapping a Node.js + TypeScript +
 - dotenv-cli + tsc-watch (local dev)
 - npm-run-all (script orchestration)
 - Joi (validation)
+- module-alias (runtime path aliases)
 - Winston (logging)
 
 **Scripts**
