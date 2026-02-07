@@ -7,8 +7,8 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "npm@10.x",
   "scripts": {
+    "copy:prisma-generated": "node ./scripts/copy-prisma-generated.mjs",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "test": "jest",
