@@ -9,6 +9,7 @@ This repository is a template for quickly bootstrapping a Node.js + TypeScript +
 - TypeScript
 - Express
 - Prisma + PostgreSQL (via Prisma Client)
+- Prisma Adapter (MariaDB)
 - Jest + Supertest
 - ESLint + Prettier
 - dotenv-cli + tsc-watch (local dev)
@@ -16,6 +17,9 @@ This repository is a template for quickly bootstrapping a Node.js + TypeScript +
 - Joi (validation)
 - module-alias (runtime path aliases)
 - Winston (logging)
+- cors (CORS support)
+- cookie-parser (cookie parsing)
+- compression (response compression)
 
 **Scripts**
 
