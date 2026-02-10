@@ -10,7 +10,13 @@ const jsonFiles = ["**/*.{json,jsonc,json5}"];
 
 export default [
   {
-    ignores: ["dist/"],
+    ignores: [
+      "dist/",
+      "node_modules/",
+      ".git/",
+      "coverage/",
+      "src/generated/**",
+    ],
   },
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
   { languageOptions: { globals: globals.node } },
