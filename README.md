@@ -39,3 +39,30 @@ This repository is a template for quickly bootstrapping a Node.js + TypeScript +
 - `migration:create`: Create a migration from schema changes without applying it
 - `migrate`: Apply pending migrations
 - `db:seed`: Run the database seed script
+
+**API Test (api-test.http)**
+
+`api-test.http` is used to organize and quickly send API requests during local development. It helps you manually debug endpoints, reuse request samples, and share test cases with teammates.
+
+How to use:
+
+- Install the VS Code extension `REST Client` to send requests directly in the editor.
+- Open `api-test.http`, add your requests, and click `Send Request` above a request block.
+
+Example (adjust paths as needed):
+
+```http
+@baseUrl = http://localhost:3000
+
+### Health check
+GET {{baseUrl}}/health
+
+### Create user
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+
+{
+  "email": "alice@example.com",
+  "name": "Alice"
+}
+```
